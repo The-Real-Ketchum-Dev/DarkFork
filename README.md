@@ -11,7 +11,7 @@ Live visualization of all the Pokémon (with option to show gyms, raids and Pok�
 [<img src="http://www.tjielup.nl/join2.png">](https://discord.gg/XjUjzmD)
 
 
-## What does DarkFork have that other RM forks don't:
+## What does PoGoMaps have that other RM forks don't:
 
 1. Cool navigation-bar filters like filtering/including/excluding per Pokémon type, generation and special tiers.
 2. Gen nr. in your Pokémon labels
