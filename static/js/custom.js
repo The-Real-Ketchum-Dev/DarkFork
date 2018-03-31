@@ -9,8 +9,15 @@ $(function () {
 	
     const scaleByRarity = true // Enable scaling by rarity. Default: true.
     const upscalePokemon = true // Enable upscaling of certain Pokemon (upscaledPokemon and notify list). Default: false.
-    const upscaledPokemon = [] // Add Pokémon IDs separated by commas (e.g. [1, 2, 3]) to upscale icons. Default: [].
-    const map_style = 'roadmap' //  default: 'roadmap'. Options - look at https://github.com/RocketMap/RocketMap/blob/develop/static/data/mapstyle.json
+    const upscaledPokemon = [] // Add Pokémon IDs separated by commas (e.g. [1, 2, 3]) to upscale icons. Default: []
+	
+	    const favoriteLocations = [
+        {
+            'Knoxville': {lat: 35.961437, lng: -83.929213, zoom: 12, deletable: false},
+        }
+        ]
+		
+    const map_style = 'style_pgo_day' //  default: 'style_pgo_day'. Options - look at https://github.com/RocketMap/RocketMap/blob/develop/static/data/mapstyle.json
     const playSound = false // Default: false.
     const playCries = false // Default: false.
     const searchMarkerStyle = 'Hidden' //  default: 'pokesition'. Options - look at https://github.com/RocketMap/RocketMap/blob/develop/static/data/searchmarkerstyle.json
@@ -95,7 +102,10 @@ $(function () {
     Store.set('locationMarkerStyle', locationMarkerStyle)
     Store.set('zoomLevel', zoomLevel)
 	Store.set('useGymSidebar', useGymSidebar)
-
+	
+	    if (Store.get('favoriteLocations').length === 0) {
+        Store.set('favoriteLocations', favoriteLocations)
+    }
 	
     if (typeof window.orientation !== 'undefined' || isMobileDevice()) {
         Store.set('maxClusterZoomLevel', maxClusterZoomLevelMobile)
