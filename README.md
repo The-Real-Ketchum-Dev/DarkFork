@@ -8,7 +8,7 @@ Live visualization of all the Pok√©mon (with option to show gyms, raids and Pok√
 
 ## Discord
 
-[<img src="http://www.tjielup.nl/join2.png">](https://discord.gg/XjUjzmD)
+[<img src="http://www.tjielup.nl/join2.png">](https://discord.gg/zTwC7sF)
 
 
 ## What does PoGoMaps have that other RM forks don't:
