@@ -38,12 +38,12 @@ And more to be added!
 
 ## Todo:
 
-* See [Milestones](https://github.com/darkelement1987/DarkFork/milestone/2)
+* See [Milestones](https://github.com/The-Real-Ketchum-Dev/PoGoMaps)
 
 
 ## Installation
 
-For instructions on how to setup and run the tool, please refer to the project [documentation](https://darkfork.readthedocs.io).
+# COMING SOON!!!
 
 
 ## Contributions
