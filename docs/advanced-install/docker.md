@@ -2,7 +2,7 @@
 
 Docker is a great way to run "containerized" applications easily and without installing tons of stuff into your computer.
 
-If you are not familiar or don't feel confortable with Python, pip or any of the other the other stuff involved in launching a DarkFork server, Docker is probably the easiest approach for you.
+If you are not familiar or don't feel confortable with Python, pip or any of the other the other stuff involved in launching a PoGoMaps server, Docker is probably the easiest approach for you.
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ If you are not familiar or don't feel confortable with Python, pip or any of the
 
 ## Introduction
 
-The quickest way to get DarkFork up and running with docker is quite simple. However you need to setup an external mysql database to make it work so be sure to read the tutorial until the "Advanced Docker Setup"
+The quickest way to get PoGoMaps up and running with docker is quite simple. However you need to setup an external mysql database to make it work so be sure to read the tutorial until the "Advanced Docker Setup"
 
 ## Simple Docker Setup
 
@@ -99,7 +99,7 @@ If you are running a ngrok container, you've got to stop it as well. To start th
 
 ## Running on docker cloud
 
-If you want to run DarkFork on a service that doesn't support arguments like docker cloud or ECS, you'll need to pass settings via variables below is an example:
+If you want to run PoGoMaps on a service that doesn't support arguments like docker cloud or ECS, you'll need to pass settings via variables below is an example:
 
 ```bash
   docker run -d -P \
@@ -153,7 +153,7 @@ docker exec -i db mysql -pyourpassword -e 'SHOW DATABASES'
 
 If the `db` container is not running, simply execute the same command that was used before to launch the container and the MySQL server will be up and running with all the previously stored data. You won't have to execute any MySQL command to create the database.
 
-### Launching the DarkFork server
+### Launching the PoGoMaps server
 
 Now that we have a persistent database up and running, we need to launch our DarkFork server. To do so, we are going to use a slightly modified version of the docker run command from the "Simple Docker Setup" session. This time we need to launch our server inside the created network and pass the necessary database infos to it. Here's an example:
 

@@ -2,7 +2,7 @@
 <html lang="{{lang}}">
   <head>
     <meta charset="utf-8">
-    <title>DarkFork</title>
+    <title>PoGoMaps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -53,7 +53,7 @@
           <div>
               {% if show.pokemons %}
             <div class="form-control switch-container">
-              <h3>Pokémon</h3>
+              <h3>Monsters</h3>
               <div class="onoffswitch">
                 <input id="pokemon-switch" type="checkbox" name="pokemon-switch" class="onoffswitch-checkbox" checked>
                 <label class="onoffswitch-label" for="pokemon-switch">
@@ -86,7 +86,7 @@
                 </div>
               </div>
              <div class="form-control switch-container" id="park-active-gym-wrapper">
-                <h3>Show Park Raids only</h3>
+                <h3>Show Park Raids Only</h3>
                 <div class="onoffswitch">
                   <input id="raid-park-gym-switch" type="checkbox" name="raid-park-gym-switch" class="onoffswitch-checkbox" checked>
                   <label class="onoffswitch-label" for="raid-park-gym-switch">
@@ -116,7 +116,7 @@
                 </select>
               </div>
               <div class="form-control switch-container" id="max-pokemon-only-wrapper">
-                <h3>Show only one raid boss:</h3>
+                <h3>Raid Boss Filter</h3>
                 <select name="raid-pokemon-only-switch" id="raid-pokemon-only-switch">
                   <option value="0">Show all</option>
                   <option value="244">Entei</option>
@@ -294,7 +294,7 @@
               {% if show.pokemons %}
             <div class="form-control">
               <label for="exclude-pokemon">
-              <h3>Hide Pokémon</h3>
+              <h3>Hide Monsters</h3>
               <div style="max-height:165px;overflow-y:auto">
                 <select id="exclude-pokemon" multiple="multiple"></select>
               </div>
@@ -314,7 +314,7 @@
 			
 				{% if show.encounter %}
             <div class="form-control switch-container">
-              <h3>Pokémon Stats</h3>
+              <h3>Monsters Stats</h3>
               <div class="onoffswitch">
                 <input id="pokemon-stats-switch" type="checkbox" name="pokemon-stats-switch" class="onoffswitch-checkbox" checked>
                 <label class="onoffswitch-label" for="pokemon-stats-switch">
@@ -365,12 +365,12 @@
               {% if show.fixed_display %}
             <div class="form-control switch-container">
               <label for="next-location">
-              <h3>Change search location</h3>
+              <h3>Search Locations</h3>
               <input id="next-location" type="text" name="next-location" placeholder="Change search location">
               </label>
             </div>
             <div class="form-control switch-container">
-              <h3>Lock search marker</h3>
+              <h3>Lock Search Marker</h3>
               <div class="onoffswitch">
                 <input id="lock-marker-switch" type="checkbox" name="lock-marker-switch" class="onoffswitch-checkbox" checked/>
                 <label class="onoffswitch-label" for="lock-marker-switch">
@@ -380,7 +380,7 @@
               </div>
             </div>
             <div class="form-control switch-container">
-              <h3>Search follows me</h3>
+              <h3>Search Follow Me</h3>
               <div class="onoffswitch">
                 <input id="geoloc-switch" type="checkbox" name="geoloc-switch" class="onoffswitch-checkbox" checked/>
                 <label class="onoffswitch-label" for="geoloc-switch">
@@ -391,7 +391,7 @@
             </div>
               {% endif %}
             <div class="form-control switch-container" >
-              <h3>Start map at my position</h3>
+              <h3>Start At My Location</h3>
               <div class="onoffswitch">
                 <input id="start-at-user-location-switch" type="checkbox" name="start-at-user-location-switch" class="onoffswitch-checkbox" checked/>
                 <label class="onoffswitch-label" for="start-at-user-location-switch">
@@ -424,7 +424,7 @@
             </div>
               {% if show.scan_display %}
             <div class="form-control switch-container">
-              <h3>Scan here button</h3>
+              <h3>Scan Here</h3>
               <div class="onoffswitch">
                 <input id="scan-here-switch" type="checkbox" name="scan-here-switch" class="onoffswitch-checkbox" checked/>
                 <label class="onoffswitch-label" for="scan-here-switch">
@@ -441,7 +441,7 @@
           <div>
             <div class="form-control">
               <label for="notify-pokemon">
-                <h3>Notify of Pokémon</h3>
+                <h3>Monsters Notifications</h3>
                 <div style="max-height:165px;overflow-y:auto">
                   <select id="notify-pokemon" multiple="multiple"></select>
                 </div>
@@ -449,7 +449,7 @@
             </div>
             <div class="form-control">
               <label for="notify-rarity">
-                <h3>Notify of Rarity</h3>
+                <h3>Rarity Notifications</h3>
                 <div style="max-height:165px;overflow-y:auto">
                   <select id="notify-rarity" multiple="multiple"></select>
                 </div>
@@ -460,14 +460,14 @@
 			 <div id="notify-perfection-wrapper" style="display:none">
 				<div class="form-control">
 				  <label for="notify-perfection">
-					<h3>Notify of Perfection</h3>
+					<h3>IV Notifications</h3>
 					<input id="notify-perfection" type="text" name="notify-perfection" placeholder="Minimum perfection %"/>
 				  </label>
 				</div>
 			</div>
             <div class="form-control">
               <label for="notify-level">
-                <h3>Notify of Level</h3>
+                <h3>Level Notifications</h3>
                 <input id="notify-level" type="text" name="notify-level" placeholder="Minimum level"/>
               </label>
             </div>
@@ -506,7 +506,7 @@
               {% endif %}
 
             <div class="form-control switch-container">
-              <h3>Hide unnotified pokemon</h3>
+              <h3>Hide Unnotified Monsters</h3>
               <div class="onoffswitch">
                 <input id="hideunnotified-switch" type="checkbox" name="hideunnotified-switch" class="onoffswitch-checkbox" checked>
                 <label class="onoffswitch-label" for="hideunnotified-switch">
@@ -516,7 +516,7 @@
               </div>
             </div>
             <div class="form-control switch-container">
-              <h3>Show browser popups</h3>
+              <h3>Show Browser Popups</h3>
               <div class="onoffswitch">
                 <input id="popups-switch" type="checkbox" name="popups-switch" class="onoffswitch-checkbox" checked>
                 <label class="onoffswitch-label" for="popups-switch">
@@ -526,7 +526,7 @@
               </div>
             </div>
             <div class="form-control switch-container">
-              <h3>Disable bouncing</h3>
+              <h3>Disable Bouncing</h3>
               <div class="onoffswitch">
                 <input id="bounce-switch" type="checkbox" name="bounce-switch" class="onoffswitch-checkbox" checked>
                 <label class="onoffswitch-label" for="bounce-switch">
@@ -536,7 +536,7 @@
               </div>
             </div>
             <div class="form-control switch-container">
-              <h3>Notify with sound</h3>
+              <h3>Notify With Sound</h3>
               <div class="onoffswitch">
                 <input id="sound-switch" type="checkbox" name="sound-switch" class="onoffswitch-checkbox" checked>
                 <label class="onoffswitch-label" for="sound-switch">
@@ -546,7 +546,7 @@
               </div>
             </div>
               <div class="form-control switch-container">
-              <h3>Use Pokémon cries</h3>
+              <h3>Monsters Cries</h3>
                 <div class="onoffswitch">
                 <input id="cries-switch" type="checkbox" name="cries-switch" class="onoffswitch-checkbox" checked>
                   <label class="onoffswitch-label" for="cries-switch">
@@ -561,7 +561,7 @@
           <h3><i class="fa fa-binoculars fa-fw"></i>Favorite locations</h3>
           <div>
             <div class="form-control switch-container">
-              <h3>Search location</h3>
+              <h3>Search Locations</h3>
               <div class="onoffswitch">
                 <input id="search-favorite-location-switch" type="checkbox" name="search-favorite-location-switch" class="onoffswitch-checkbox">
                 <label class="onoffswitch-label" for="search-favorite-location-switch">
@@ -576,7 +576,7 @@
               </div>
             </div>
             <div class="form-control switch-container">
-              <h3>Save this view</h3>
+              <h3>Save This To Favorites</h3>
               <div class="onoffswitch">
                 <input id="add-favorite-location-switch" type="checkbox" name="add-favorite-location-switch" class="onoffswitch-checkbox">
                 <label class="onoffswitch-label" for="add-favorite-location-switch">
@@ -600,11 +600,11 @@
           <h3><i class="fa fa-map-o fa-fw"></i>Style Settings</h3>
           <div>
             <div class="form-control switch-container">
-              <h3>Map Style</h3>
+              <h3>PoGoMaps Styles</h3>
               <select id="map-style"></select>
             </div>
             <div class="form-control switch-container">
-              <h3>Map Service Provider</h3>
+              <h3>Map Providers</h3>
               <select name="map-service-provider" id="map-service-provider">
                 <option value="googlemaps">Google Maps</option>
                 <option value="applemaps">Apple Maps</option>
@@ -642,7 +642,7 @@
             <div><center><a href="stats">Full Stats</a></center></div>
           </div>
           <div class="switch-container">
-            <center><h1 id="stats-ldg-label">Loading...</h1></center>
+            <center><h1 id="stats-ldg-label">Please Wait...</h1></center>
           </div>
           <div class="stats-label-container">
             <center><h1 id="stats-pkmn-label"></h1></center>
@@ -669,7 +669,7 @@
         </div>
       </nav>
       <nav id="gym-details">
-        <center><h1>Loading...</h1></center>
+        <center><h1>Please Wait...</h1></center>
       </nav>
       <div id="map"></div>
       <div class="fab" id="scan-here" style="display:none"></div>
