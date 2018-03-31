@@ -38,8 +38,7 @@ And more to be added!
 
 ## Todo:
 
-* See [Milestones](https://github.com/The-Real-Ketchum-Dev/PoGoMaps)
-
+# COMING SOON
 
 ## Installation
 
