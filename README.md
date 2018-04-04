@@ -3,7 +3,7 @@
 
 Live visualization of all the Pokémon (with option to show gyms, raids and PokéStops) in your area. This is a proof of concept that we can load all the Pokémon visible nearby given a location. Currently runs on a Flask server displaying Google Maps with markers on it.
 
-![logo](https://github.com/The-Real-Ketchum-Dev/PoGoMaps/blob/MIX_MEWTWO/static/images/PoGoMaps.png)
+![logo](https://github.com/The-Real-Ketchum-Dev/PoGoMaps/blob/MIX_MEWTWO/static/images/logopm.png)
 
 
 ## Discord
